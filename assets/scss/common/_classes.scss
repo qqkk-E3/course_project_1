@@ -11,8 +11,10 @@
 	font-size: 1.125em;
 	letter-spacing: 0.1em;
 
-	$:hover,
-	$:focus {
+	transition: background-color 0.5s;
+	
+	&:hover,
+	&:focus {
 		background-color: $color-accent;
 	}
 }
