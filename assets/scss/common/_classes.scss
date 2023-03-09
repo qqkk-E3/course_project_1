@@ -1,3 +1,20 @@
-.btn {}
+.btn {
+	min-height: 60px;
+	min-width: 250px;
+	background-color: rgba($color-white, 0.1);
+	border: 2px solid $color-white;
+	padding: 0.5em 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.125em;
+	letter-spacing: 0.1em;
+
+	$:hover,
+	$:focus {
+		background-color: $color-accent;
+	}
+}
 
 .btn--light {}
