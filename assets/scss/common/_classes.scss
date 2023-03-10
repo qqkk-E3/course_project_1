@@ -28,6 +28,16 @@
 
   border-color: $color-white;
   background-color: rgba($color-white, 0.1);
+
+  @include lg-md {
+    min-width: 200px;
+    min-height: 50px;
+  }
+
+  @include md {
+    min-width: 170px;
+    min-height: 40px;
+  }
 }
 
 .btn--primary {
