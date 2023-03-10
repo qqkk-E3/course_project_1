@@ -14,8 +14,6 @@
   border-width: 2px;
   border-style: solid;
 
-  font-size: 1.125em;
-
   &:hover,
   &:focus {
     background-color: $color-accent;
@@ -23,11 +21,14 @@
 }
 
 .btn--light {
-  min-width: 250px;
-  min-height: 60px;
-
   border-color: $color-white;
   background-color: rgba($color-white, 0.1);
+
+  @include lg-min {
+    min-width: 250px;
+    min-height: 60px;
+    font-size: 1.125em;
+  }
 
   @include lg-md {
     min-width: 200px;
@@ -41,11 +42,19 @@
 }
 
 .btn--primary {
-  min-width: 350px;
   min-height: 60px;
+  font-size: 1.125em;
 
   border-color: $color-primary;
   background-color: rgba($color-primary, 0.8);
+
+  @include sm-min {
+    min-width: 350px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
 }
 
 .visually-hidden {
