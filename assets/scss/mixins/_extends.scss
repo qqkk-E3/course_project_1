@@ -1,6 +1,7 @@
 @use "../presets" as *;
 
 %container {
-	width: min(100% - $gap-x2, $container-size);
-	margin-inline: auto;
+  width: min(100% - $gap-x2, $container-size);
+
+  margin-inline: auto;
 }

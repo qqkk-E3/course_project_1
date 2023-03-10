@@ -2,20 +2,21 @@
 @use "../../mixins" as *;
 
 .header-content {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 
-	&__container {
-		@extend %container;
-	}
+  &__container {
+    @extend %container;
+  }
 
-	&__title {
-		margin: 0 0 53px;
-	}
+  &__title {
+    margin: 0 0 53px;
+  }
 
-	&__actions {
-		display: flex;
-		justify-content: center;
-		gap: $gap;
-	}
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    gap: $gap;
+  }
 }

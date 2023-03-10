@@ -2,21 +2,27 @@
 @use "../../../mixins" as *;
 
 .skills {
-	padding: $gap-sm;
+  padding: $gap-sm;
 
-	&__title {
-		display: none;
-	}
+  &__title {
+    display: none;
+  }
 
-	&__container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-	grid-auto-rows: calc(33.33333vh - 13.3333333px);
-	gap: $gap-sm;
-	} 
+  &__container {
+    display: grid;
 
-	&__actions {
+    margin-bottom: $gap;
 
-	}
+    gap: $gap-sm;
+    grid-auto-rows: calc(33.33333vh - 13.3333333px);
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: $gap-lg;
+  }
 }

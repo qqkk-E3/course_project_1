@@ -2,18 +2,20 @@
 @use "../../mixins" as *;
 
 .header-menu {
-	position: absolute;
-	z-index: 2;
-	top: 0;
-	right: 0;
-	left: 0;
-	padding-top: $gap;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
 
-	&__container {
-		@extend %container;
-		display: grid;
-		align-items: center;
-		grid-template-columns: auto 1fr;
-		gap: $gap;
-	}
+  padding-top: $gap;
+
+  &__container {
+    display: grid;
+    align-items: center;
+
+    @extend %container;
+    gap: $gap;
+    grid-template-columns: auto 1fr;
+  }
 }
