@@ -1,18 +1,23 @@
 @use "../../libs/normalize.css/normalize";
 
-@use "common/typography";
-@use "common/classes";
+@use "common";
+@use "components/header";
+@use "components/sections/skills";
 
-@use "components/header/header";
-@use "components/header/header-overlay";
-@use "components/header/header-menu";
-@use "components/header/header-logo";
-@use "components/header/header-navbar";
-@use "components/header/header-content";
-@use "components/sections/skills/skills";
-@use "components/sections/skills/skill-item";
 @use "components/sections/section-about";
 @use "components/sections/section-form";
 @use "components/sections/section-posts";
 
 @use "components/footer/footer";
+
+@media (min-height: 691px) {
+  .skills__container {
+    grid-auto-rows: calc(33.33333vh - 13.3333333px);
+  }
+}
+
+@media (min-height: 690px) {
+  .skills__container {
+    grid-auto-rows: calc(230px - 13.3333333px);
+  }
+}
